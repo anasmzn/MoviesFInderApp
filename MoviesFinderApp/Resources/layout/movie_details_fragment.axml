@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:background="@android:color/white"
+	android:id="@+id/scrollView1" >
+<RelativeLayout
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/relativeLayout1" >
+		
+	<ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="300.0dp"
+        android:scaleType="fitXY"
+		android:id="@+id/ivMoviePicture" />
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/ivMoviePicture"
+			android:padding="10dp"
+		 >
+			<TextView
+				android:text="Movie Title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:layout_marginBottom="5dp"
+				android:id="@+id/tvTitle" />
+			<TextView
+				android:text="Action, Sifi, fantasy"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:id="@+id/tvCategory" />
+			<TextView
+				android:text="14+ / 2h 32min"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvRating" />
+
+			<TextView
+				android:text="Released- 28/11/2019"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:id="@+id/tvReleaseDate" />
+			<RatingBar
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:numStars="5"
+				android:layout_gravity="center"
+				android:padding="2dp"
+				android:id="@+id/ratingBar"
+                android:isIndicator="true"
+				android:layout_marginRight="20dp" />
+			<TextView
+				android:text="Description"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="5dp"
+			 />
+			<TextView
+				android:text="Set in the 1970s, the short follows young adult Jess as she joins her friends at a party in a dilapidated mansion hosted by the mysterious Seth. When odd things begin to happen to Jess and her friends, the Phantom Stranger intervenes to save her from a dreary fate."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="5dp"
+				android:id="@+id/tvDescription" />
+		</LinearLayout>
+		<CheckBox
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="20dp"
+			android:button="@drawable/checkbox_fav_selector"
+			android:id="@+id/cbFav" />
+	
+
+        
+
+</RelativeLayout>
+</ScrollView>
